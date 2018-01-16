@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user=scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<title>Usuarios por Hora por Fecha</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-tachometer" aria-hidden="true"></span><span class="tab-text">Usuarios por Hora por Fecha</span></a></li>
+		</ul>
+
+		<div class ="secciones">
+		
+			<article id = "tab1">
+			
+			<center><h1>Audiencia tvgo Live Perú de Lunes a Domingo - Diciembre</h1></center>
+			
+			<br>
+			<br>  
+
+   			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   			<script type="text/javascript">
+      		google.charts.load('current', {'packages':['corechart']});
+      		google.charts.setOnLoadCallback(drawChart);
+
+      		function drawChart() {
+        	var data = google.visualization.arrayToDataTable([
+	          ['Fecha', 'Desktop',  'App',  'MobileWeb'],
+	          ['01/12',  2103,      955,       86],
+	          ['02/12',  1323,      675,       59],
+	          ['03/12',  1024,      518,       39],
+	          ['04/12',  2141,      895,       91],
+	          ['05/12',  2065,      900,       96],
+	          ['06/12',  1724,      962,       95],
+	          ['07/12',  1818,      949,       82],
+	          ['08/12',  1525,      860,       79],
+	          ['09/12',  1302,      718,       75],
+	          ['10/12',  1056,      577,       45],
+	          ['11/12',  2169,      899,       94],
+	          ['12/12',  2070,     1037,       93],
+	          ['13/12',  2115,      991,       92],
+	          ['14/12',  2200,     1004,       99],
+	          ['15/12',  1864,      931,       83],
+	          ['16/12',   896,      532,       31],
+	          ['17/12',   906,      421,       44],
+	          ['18/12',  1839,      832,       86],
+	          ['19/12',  1850,      960,       83],
+	          ['20/12',  1864,      985,       84],
+	          ['21/12',  1981,     1425,      102],
+	          ['22/12',  1944,     1237,      118],
+	          ['23/12',   729,      594,       27],
+	          ['24/12',   510,      354,       17],
+	     	  ['25/12',   471,      300,       16],
+	     	  ['26/12',  1498,      749,       69],
+	     	  ['27/12',  1588,      831,       59],
+	     	  ['28/12',  1626,      830,       64],
+	     	  ['29/12',  1536,      867,       61],
+	     	  ['30/12',   853,      532,       30]
+	     	  ['31/12',   496,      298,       13]
+	        ]);
+
+	        var options = {
+	          title: 'PROMEDIO USUARIOS POR DIA POR HORA - PLATAFORMA',
+	          curveType: 'function',
+	          legend: { position: 'bottom left' }
+	        };
+
+		    var chart = new google.visualization.LineChart(document.getElementById('curve_chart1'));
+
+		    chart.draw(data, options);
+		    }
+		    </script>
+
+		    <div id="curve_chart1" style="width: automatic; height: automatic"></div>
+
+		<br> 
+
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+		     function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+		          ['Fecha',  'Total'],
+		          ['01/12',  3144],
+		          ['02/12',  2057],
+		          ['03/12',  1581],
+		          ['04/12',  3127],
+		          ['05/12',  3061],
+		          ['06/12',  2781],
+		          ['07/12',  2849],
+		          ['08/12',  2464],
+		          ['09/12',  2095],
+		          ['10/12',  1678],
+		          ['11/12',  3161],
+		          ['12/12',  3200],
+		          ['13/12',  3198],
+		          ['14/12',  3303],
+		          ['15/12',  2879],
+		          ['16/12',  1460],
+		          ['17/12',  1371],
+		          ['18/12',  2758],
+		          ['19/12',  2893],
+		          ['20/12',  2933],
+		          ['21/12',  3508],
+		          ['22/12',  3299],
+	          	  ['23/12',  1349],
+	              ['24/12',   881],
+	     	      ['25/12',   787],
+	     	      ['26/12',  2315],
+	     	      ['27/12',  2479],
+	     	      ['28/12',  2521],
+	     	      ['29/12',  2464],
+	     	      ['30/12',  1415],
+	     	      ['31/12',   807]
+		        ]); 
+
+		        var options = {
+		          title: 'PROMEDIO USUARIOS TOTALES POR DIA POR HORA',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div2'));
+
+		        chart.draw(data, options);
+		     	 }
+		    	</script>
+
+		   		<div id="chart_div2" style="width: automatic; height: automatic;"></div>
+
+		<br>
+
+   			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    		<script type="text/javascript">
+      		google.charts.load('current', {'packages':['corechart']});
+      		google.charts.setOnLoadCallback(drawChart);
+
+      		function drawChart() {
+        	var data = google.visualization.arrayToDataTable([
+          	   ['Fecha',  'Total'],
+          	   	  ['01/12',   8832],
+		          ['02/12',   6616],
+		          ['03/12',   4013],
+		          ['04/12',  10946],
+		          ['05/12',   9537],
+		          ['06/12',   9312],
+		          ['07/12',   9029],
+		          ['08/12',   8024],
+		          ['09/12',   8072],
+		          ['10/12',   7592],
+		          ['11/12',  11238],
+		          ['12/12',  10476],
+		          ['13/12',  10410],
+		          ['14/12',   9936],
+		          ['15/12',   8214],
+		          ['16/12',   2787],
+		          ['17/12',   4999],
+		          ['18/12',   9957],
+		          ['19/12',   9646],
+		          ['20/12',   9369],
+		          ['21/12',  12134],
+		          ['22/12',  14374],
+		          ['23/12',   2682],
+	          	  ['24/12',   2274],
+	              ['25/12',   1738],
+	     	      ['26/12',   8204],
+	     	      ['27/12',   7870],
+	     	      ['28/12',   7950],
+	     	      ['29/12',   9345],
+	     	      ['30/12',   2720],
+	     	      ['31/12',   1465]
+		        ]);
+
+        	var options = {
+          	 title: 'MAXIMO USUARIOS TOTALES POR DIA POR HORA',
+	          curveType: 'function',
+	          legend: { position: 'bottom left' }
+        	};
+
+        	var chart = new google.visualization.AreaChart(document.getElementById('chart_div3'));
+        	chart.draw(data, options);
+      		}
+    		</script>
+
+    		<div id="chart_div3" style="width: automatic; height: automatic;"></div>
+
+			</article>
+		</div>
+	</div>
+</body>
+</html>
